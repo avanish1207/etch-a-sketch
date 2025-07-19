@@ -10,3 +10,16 @@ container.addEventListener("mouseover", e => {
         e.target.style.backgroundColor="red";
     }
 })
+
+const body=document.body;
+const press=document.createElement("div");
+press.classList.add("top");
+const but=document.createElement("button");
+but.textContent="Customize Grid";
+body.insertBefore(press, container);
+press.append(but);
+
+but.addEventListener("click", () => {
+    let a=parseInt(prompt("Enter the number of rows"));
+    let b=parseInt(prompt("Enter the number of columns"));
+});
