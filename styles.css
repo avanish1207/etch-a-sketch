@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    box-sizing: border-box; /*include any border or padding inside */
+    width: 6.25%;
+    /* height: 6.25%; */
+    border-style: solid;
+    aspect-ratio: 1/1;
+}
