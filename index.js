@@ -22,4 +22,13 @@ press.append(but);
 but.addEventListener("click", () => {
     let a=parseInt(prompt("Enter the number of rows"));
     let b=parseInt(prompt("Enter the number of columns"));
+
+    container.innerHTML='';
+
+    for(let i=0; i<(a*b); i++){
+        const content=document.createElement("div");
+        content.classList.add("content");
+        content.style.width=`${100/b}%`;
+        container.append(content);
+    }
 });
