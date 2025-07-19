@@ -4,3 +4,9 @@ for(let i=0; i<256; i++){
     content.classList.add("content");
     container.append(content);
 }
+
+container.addEventListener("mouseover", e => {
+    if(e.target.classList.contains("content")){
+        e.target.style.backgroundColor="red";
+    }
+})
